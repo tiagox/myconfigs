@@ -1,0 +1,17 @@
+{
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		120
+	],
+	"spell_check": false,
+	"tab_size": 2,
+	"trim_trailing_white_space_on_save": true
+}
