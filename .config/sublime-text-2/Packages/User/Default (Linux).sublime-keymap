@@ -1,6 +1,12 @@
 [
+  { "keys": ["ctrl+k", "ctrl+o"], "command": "show_panel", "args": {"panel": "console", "toggle": true}},
+  { "keys": ["ctrl+shift+l"], "command": "split_selection_into_lines" },
+
+  { "keys": ["alt+-"], "command": "fold" },
+  { "keys": ["alt++"], "command": "unfold" },
+
+  { "keys": ["ctrl+j"], "command": "join_lines" },
 
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
-  { "keys": ["ctrl+j"], "command": "join_lines" }
 ]

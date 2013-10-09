@@ -1,9 +1,18 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Emmet",
-		"LESS",
+		"Git",
+		"INI",
+		"Markdown Preview",
+		"Package Control",
 		"Processing",
-		"Sass"
+		"Sass",
+		"Theme - Soda"
+	],
+	"repositories":
+	[
+		"https://sublime.wbond.net/alpha/packages.json"
 	]
 }

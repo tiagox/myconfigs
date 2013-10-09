@@ -1,21 +1,28 @@
 {
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"detect_slow_plugins": false,
+	"draw_centered": false,
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
-	"folder_exclude_patterns":
-	[
-	],
 	"font_size": 8,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"margin": 0,
 	"rulers":
 	[
 		80,
 		120
 	],
-	"tab_size": 2,
-	"translate_tabs_to_spaces": false,
+	"soda_classic_tabs": false,
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": "false"
+	"word_wrap": false
 }

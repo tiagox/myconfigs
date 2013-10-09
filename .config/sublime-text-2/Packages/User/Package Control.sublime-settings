@@ -1,11 +1,18 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Emmet",
+		"Format SQL",
 		"INI",
+		"Jasmine",
+		"Markdown Preview",
 		"Package Control",
+		"PHPUnit",
 		"Sass",
-		"SublimeCodeIntel",
-		"SublimeLinter"
+		"SASS Build",
+		"SublimeLinter",
+		"SublimeOnSaveBuild",
+		"Theme - Soda"
 	]
 }

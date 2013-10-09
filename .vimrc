@@ -26,6 +26,8 @@ set backspace=indent,eol,start
 "else
 "  set backup		" keep a backup file
 "endif
+
+set nobackup		" never backup files
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -95,3 +97,14 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" Replace tabs with spacea.
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+" Show line numbers.
+set number
+
+" My own maps.
+:autocmd FileType php noremap <C-P> :w!<CR>:!php -f %<CR>
+:autocmd FileType php noremap <C-T> :w!<CR>:!phpunit --colors %<CR>
