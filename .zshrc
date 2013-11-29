@@ -37,6 +37,8 @@ ZSH_THEME="tiagox"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+DEFAULT_USER="agnoster"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -51,3 +53,10 @@ alias ls='ls --color'
 alias ll='ls -lh'
 
 source ~/.exports
+source ~/.profile
+
+# Powerline
+if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
+
