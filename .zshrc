@@ -49,9 +49,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/games:/usr/games
 
-alias ls='ls --color'
-alias ll='ls -lh'
-
+source ~/.aliases
 source ~/.exports
 source ~/.profile
 
