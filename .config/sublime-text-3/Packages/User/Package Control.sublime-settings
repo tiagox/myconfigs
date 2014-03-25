@@ -2,22 +2,14 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"EditorConfig",
 		"Emmet",
 		"Git",
 		"Grunt",
 		"HTML-CSS-JS Prettify",
 		"INI",
-		"Laravel 4 Artisan",
-		"Laravel 4 Snippets",
-		"Laravel Blade Highlighter",
 		"Markdown Preview",
 		"Package Control",
-		"PHPUnit Completions",
-		"Processing",
 		"Sass",
-		"SimplePHPUnit",
-		"SML (Standard ML)",
 		"SublimeCodeIntel",
 		"Theme - Soda"
 	],
