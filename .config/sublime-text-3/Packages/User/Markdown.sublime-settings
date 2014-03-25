@@ -1,0 +1,11 @@
+{
+  "line_numbers": false,
+  "margin": 0,
+  "tab_size": 4,
+  "spell_check": true,
+  "draw_centered": true,
+  "dictionary": "Packages/Dictionaries/Spanish.dic",
+  "word_wrap": true,
+  "wrap_width": 80,
+  "rulers": [80]
+}

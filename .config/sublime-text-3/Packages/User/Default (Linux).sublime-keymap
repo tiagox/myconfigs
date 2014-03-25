@@ -7,5 +7,7 @@
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
 
-  { "keys": ["ctrl+alt+shift+t"], "command": "simple_php_unit" }
+  { "keys": ["ctrl+alt+shift+t"], "command": "simple_php_unit" },
+
+  { "keys": ["ctrl+e", "ctrl+l"], "command": "sql_list_connection" }
 ]

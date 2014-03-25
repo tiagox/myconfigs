@@ -2,6 +2,10 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"CodeFormatter",
+		"Dictionaries",
+		"DocBlockr",
+		"EditorConfig",
 		"Emmet",
 		"Git",
 		"Grunt",
