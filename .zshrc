@@ -1,12 +1,12 @@
-# Determinate if I'm running in a XTERM environment.
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Determinate if I'm running in a XTERM environment or a TTY environment.
 if [[ "${TTY}" =~ "^/dev/tty[0-9]*$" ]]; then
   XTERM_ENV=0
 else
   XTERM_ENV=1
 fi
-
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
