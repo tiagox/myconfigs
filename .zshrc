@@ -1,3 +1,10 @@
+# Determinate if I'm running in a XTERM environment.
+if [[ "${TTY}" =~ "^/dev/tty[0-9]*$" ]]; then
+  XTERM_ENV=0
+else
+  XTERM_ENV=1
+fi
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
