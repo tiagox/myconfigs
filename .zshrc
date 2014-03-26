@@ -66,7 +66,20 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/games:/usr/games
 
-source ~/.exports
+# Exports
+if [[ $XTERM_ENV == 1 ]]; then
+    export TERM=xterm-256color
+fi
+export APPLICATION_ENV="santiago"
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
 
 # Powerline
 if [[ ( $XTERM_ENV == 1 ) && ( -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ) ]]; then
