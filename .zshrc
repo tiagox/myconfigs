@@ -17,6 +17,16 @@ ZSH_THEME="eastwood"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls="ls --color"
+alias ll="ls -lh"
+alias upgrade-system="sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y"
+alias grunt-all="grunt sass jsbeautifier:fix jshint"
+
+mygrants() {
+    mysql -B -N $@ -e "SELECT DISTINCT CONCAT('SHOW GRANTS FOR ''', user, '''@''', host, ''';') AS query FROM mysql.user" | \
+        mysql $@ | \
+        sed 's/\(GRANT .*\)/\1;/;s/^\(Grants for .*\)/## \1 ##/;/##/{x;p;x;}'
+}
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -56,7 +66,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/games:/usr/games
 
-source ~/.aliases
 source ~/.exports
 source ~/.profile
 
