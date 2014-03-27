@@ -17,11 +17,29 @@ ZSH_THEME="eastwood"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="ls --color"
-alias ll="ls -lh"
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+alias ll='ls -lFh'
+alias la='ls -A'
+alias l='ls -CF'
 alias upgrade-system="sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y"
+alias upgrade-clean="sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove"
 alias grunt-all="grunt sass jsbeautifier:fix jshint"
 
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# This is another way for creating aliases/functions.
 mygrants() {
     mysql -B -N $@ -e "SELECT DISTINCT CONCAT('SHOW GRANTS FOR ''', user, '''@''', host, ''';') AS query FROM mysql.user" | \
         mysql $@ | \
