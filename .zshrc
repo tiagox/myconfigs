@@ -93,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 
 # Exports
 if [[ $XTERM_ENV == 1 ]]; then
