@@ -3,5 +3,6 @@
   { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
   { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
-  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} }
+  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
 ]
