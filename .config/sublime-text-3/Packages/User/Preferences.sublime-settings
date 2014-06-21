@@ -1,6 +1,6 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/User/PlasticCodeWrap.tmTheme",
+	"color_scheme": "Packages/User/PlasticCodeWrap (SL).tmTheme",
 	"dictionary": "Packages/Dictionaries/Spanish.dic",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
