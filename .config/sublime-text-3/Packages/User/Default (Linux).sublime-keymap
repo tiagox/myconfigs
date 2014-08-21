@@ -1,8 +1,17 @@
 [
+  // Panel
   { "keys": ["f12"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+  // Toggle comments
   { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
   { "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+  // Spread cursos to multiple lines
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+  // Move lines
+  { "keys": ["ctrl+super+up"], "command": "swap_line_up" },
+  { "keys": ["ctrl+super+down"], "command": "swap_line_down" },
+  { "keys": ["ctrl+super+right"], "command": "indent" },
+  { "keys": ["ctrl+super+left"], "command": "unindent" },
+  // Override native keymaps.
   { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
 ]
