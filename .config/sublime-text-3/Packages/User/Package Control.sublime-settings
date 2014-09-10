@@ -5,7 +5,6 @@
 		"ColorPicker",
 		"Dictionaries",
 		"DocBlockr",
-		"Emacs-like Modelines",
 		"Emmet",
 		"INI",
 		"Javascript Beautify",
@@ -16,7 +15,6 @@
 		"SublimeLinter",
 		"SublimeLinter-jscs",
 		"SublimeLinter-jshint",
-		"SyncedSideBar",
 		"Theme - Soda"
 	],
 	"repositories":
