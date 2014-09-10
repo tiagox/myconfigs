@@ -12,6 +12,13 @@
 	[
 		"Vintage"
 	],
+	"ignored_words":
+	[
+		"recursivos",
+		"scope",
+		"Algol",
+		"recursividad"
+	],
 	"rulers":
 	[
 		80,
