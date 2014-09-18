@@ -118,7 +118,7 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# phpbrew
+# Enable phpbrew
 export PHPBREW_SET_PROMPT=1
 source $HOME/.phpbrew/bashrc
 
