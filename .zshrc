@@ -85,7 +85,7 @@ DEFAULT_USER="tiagox"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,6 +110,10 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# phpbrew
+export PHPBREW_SET_PROMPT=1
+source $HOME/.phpbrew/bashrc
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -130,3 +134,7 @@ fi
 #if [[ ( $XTERM_ENV == 1 ) && ( -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ) ]]; then
 #    source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 #fi
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+source $HOME/.rvm/scripts/rvm
