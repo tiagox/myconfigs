@@ -13,5 +13,12 @@
   { "keys": ["ctrl+super+right"], "command": "indent" },
   { "keys": ["ctrl+super+left"], "command": "unindent" },
   // Override native keymaps.
-  { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
+  { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  // Origami
+  { "keys": ["super+shift+up"], "command": "travel_to_pane", "args": {"direction": "up"} },
+  { "keys": ["super+shift+right"], "command": "travel_to_pane", "args": {"direction": "right"} },
+  { "keys": ["super+shift+down"], "command": "travel_to_pane", "args": {"direction": "down"} },
+  { "keys": ["super+shift+left"], "command": "travel_to_pane", "args": {"direction": "left"} },
+  { "keys": ["super+z"], "command": "zoom_pane", "args": {"fraction": 0.9} },
+  { "keys": ["super+x"], "command": "unzoom_pane", "args": {} }
 ]
