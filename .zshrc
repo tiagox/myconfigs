@@ -143,6 +143,8 @@ source $HOME/.phpbrew/bashrc
 #    source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 #fi
 
+source ~/.nvm/nvm.sh
+
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 source $HOME/.rvm/scripts/rvm
