@@ -46,6 +46,14 @@ mygrants() {
         sed 's/\(GRANT .*\)/\1;/;s/^\(Grants for .*\)/## \1 ##/;/##/{x;p;x;}'
 }
 
+bkp() {
+    mv $1 $1.bkp
+}
+
+unbkp() {
+    rename 's/\.bkp$//' $1
+}
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
