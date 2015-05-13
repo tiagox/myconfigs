@@ -99,8 +99,8 @@ endif
 
 " Replace tabs with spacea.
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 " Show line numbers.
 set number
@@ -117,5 +117,4 @@ set laststatus=2
 
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
-
 
