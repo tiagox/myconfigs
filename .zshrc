@@ -20,7 +20,6 @@ ZSH_THEME="tiagox"
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
     alias grep='grep --color=auto'
@@ -28,6 +27,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lFh'
 alias la='ls -A'
 alias l='ls -CF'
@@ -107,6 +107,7 @@ export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 if [[ $XTERM_ENV == 1 ]]; then
     export TERM=xterm-256color
 fi
+
 export APPLICATION_ENV="santiago"
 
 # set PATH so it includes user's private bin if it exists
