@@ -109,9 +109,6 @@ set number
 :autocmd FileType php noremap <C-P> :w!<CR>:!php -f %<CR>
 :autocmd FileType php noremap <C-T> :w!<CR>:!phpunit --colors %<CR>
 
-" Powerline
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-
 " Always show statusline
 set laststatus=2
 
