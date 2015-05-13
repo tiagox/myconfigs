@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-source $ZSH/oh-my-zsh.sh
-
 # Determinate if I'm running in a XTERM environment or a TTY environment.
 if [[ "${TTY}" =~ "^/dev/tty[0-9]*$" ]]; then
   XTERM_ENV=0
@@ -91,6 +89,8 @@ DEFAULT_USER="tiagox"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(history-substring-search)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
