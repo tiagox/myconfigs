@@ -120,7 +120,6 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 # Enable phpbrew
-export PHPBREW_SET_PROMPT=1
 source $HOME/.phpbrew/bashrc
 
 # You may need to manually set your language environment
@@ -138,13 +137,6 @@ source $HOME/.phpbrew/bashrc
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Powerline
-#if [[ ( $XTERM_ENV == 1 ) && ( -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ) ]]; then
-#    source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-#fi
-
-source ~/.nvm/nvm.sh
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
